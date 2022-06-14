@@ -11,3 +11,13 @@ $("node").each(function() {
     });
 });
 
+$("way").each(function() {
+    let way_id = sqlstring.escape($(this).attr("id"));
+    console.log("INSERT INTO `way` SET id = " + way_id + ";");
+    $(this).children("nd").each(function() {
+        console.log("INSERT INTO `way_node` SET way_id = " + way_id + ", node_id = " + sqlstring.escape($(this).attr("ref")) + ";");
+    });
+    $(this).children("tag").each(function() {
+        console.log("INSERT INTO `way_tag` SET way_id = " + way_id + ", `name` = " + sqlstring.escape($(this).attr("k")) + ", `value` = " + sqlstring.escape($(this).attr("v")) + ";");
+    });
+});
