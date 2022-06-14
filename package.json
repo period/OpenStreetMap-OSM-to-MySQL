@@ -4,20 +4,20 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/period/OpenStreetMap-OSM-to-MySQL.git"
+        "type": "git",
+        "url": "git+https://github.com/period/OpenStreetMap-OSM-to-MySQL.git"
     },
     "author": "",
     "license": "UNLICENSED",
     "bugs": {
-      "url": "https://github.com/period/OpenStreetMap-OSM-to-MySQL/issues"
+        "url": "https://github.com/period/OpenStreetMap-OSM-to-MySQL/issues"
     },
     "homepage": "https://github.com/period/OpenStreetMap-OSM-to-MySQL#readme",
     "dependencies": {
-      "cheerio": "^1.0.0-rc.10"
+        "cheerio": "^1.0.0-rc.10",
+        "sqlstring": "^2.3.3"
     }
-  }
-  
+}
